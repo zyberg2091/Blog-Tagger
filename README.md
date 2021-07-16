@@ -35,3 +35,7 @@ so albert model is adviced here to download.
   `tagger=Blog_Tagger(Text_data,maxlen=<int num>)` <br>
   `tagger.token_embedding_gen(model,tokenizer)` <br>
   ` top_tokens=tagger.tag_gen(k)` <br>
+
+## Source Repository that contains package 
+
+- Link : [original repository](github.com/zyberg2091/nlp)
