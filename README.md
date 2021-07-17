@@ -6,13 +6,13 @@ in many sectors of IT such as Amazon uses tags for customer segmentation.
 
 ## Prerequisites:
 
-Installed transformer model.<br>
+- Install packages in the requirements.txt using `pip install -r requirements.txt`<br>
 
-Follow the instruction given below to install albert-base model ,you can change the model but it might need some customization in source code. 
-so albert model is adviced here to download.
+- Follow the instruction given below to use albert-base model from hugging face model hub, you can change the model but it might need some customization in source code. 
+  so albert model is adviced here to download.
 
-`model=TFAutoModel.from_pretrained('albert-base-v2')` <br>
-`tokenizer=AutoTokenizer.from_pretrained('albert-base-v2')` <br>
+  `model=TFAutoModel.from_pretrained('albert-base-v2')` <br>
+  `tokenizer=AutoTokenizer.from_pretrained('albert-base-v2')` <br>
 
 
 
