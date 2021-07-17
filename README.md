@@ -38,4 +38,4 @@ so albert model is adviced here to download.
 
 ## Source Repository that contains package 
 
-- Link : [original repository](github.com/zyberg2091/nlp)
+- Link : [original repository](https://github.com/zyberg2091/NLP)
