@@ -55,7 +55,7 @@ class Blog_Tagger:
     noun_phrases = set(chunk.text.strip().lower() for chunk in self.doc.noun_chunks)
     all_noun_candidate_tokens=nouns.union(noun_phrases)
 
-    present_candidate_tokens=list(filter(lambda candidate_tokens : candidate_tokens in all_noun_candidate_tokens, self.all_candidate_tokens))
+    present_candidate_tokens=list(filter(lambda noun_candidate_tokens : noun_candidate_tokens in all_noun_candidate_tokens, self.all_candidate_tokens))
 
     """### Now let's create embeddings for text(blog post) and all filtered imp candidate tokens 
       <p>we use autoclass of the hugging face to call ALBERT model for creating embeddings</p>"""
