@@ -77,8 +77,8 @@ class Blog_Tagger:
     for token,token_embed in self.candidate_token_embeddings.items():
       score[token]=cosine_similarity(np.array(token_embed).reshape(1,-1),np.array(self.blog_text_embedding))[0][0]  #compared to blog_text
 
-    k_tag_score=sorted(score)
-    return k_tag_score[-k:]
+    k_tags=sorted(score,reverse=True,key=lambda item : item[1])
+    return k_tags[:k]
 
 
 
